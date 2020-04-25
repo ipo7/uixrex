@@ -1112,12 +1112,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 10px 8px;
+  padding: 60px 10px 60px;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 420px) {
   .footer__container {
     justify-content: center;
+    padding: 30px 10px 30px;
   }
 }
 .footer__text {
