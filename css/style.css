@@ -652,7 +652,7 @@ body {
 }
 @media screen and (max-width: 420px) {
   .price__subtitle {
-    padding-bottom: 40px;
+    padding: 0 10px 40px;
     font-size: 17px;
   }
 }
@@ -851,12 +851,17 @@ body {
 }
 @media screen and (max-width: 420px) {
   .screenshots__item .screenshots__item-img {
-    width: calc(366px * 0.7);
-    height: calc(637px * 0.7);
+    width: calc(366px * 0.6);
+    height: calc(637px * 0.6);
   }
 }
 .screenshots__buttons {
   margin-top: 30px;
+}
+@media screen and (max-width: 420px) {
+  .screenshots__buttons {
+    margin-top: 10px;
+  }
 }
 .screenshots__previous-button {
   box-shadow: 0 5px 8px 0 rgba(58, 58, 58, 0.3);
@@ -866,6 +871,12 @@ body {
   border-radius: 50%;
   position: relative;
   margin: 0 20px;
+}
+@media screen and (max-width: 420px) {
+  .screenshots__previous-button {
+    width: 50px;
+    height: 50px;
+  }
 }
 .screenshots__previous-button:before {
   content: "";
@@ -878,6 +889,12 @@ body {
   top: 27px;
   left: 15px;
 }
+@media screen and (max-width: 420px) {
+  .screenshots__previous-button:before {
+    top: 17px;
+    left: 10px;
+  }
+}
 .screenshots__previous-button:after {
   content: "";
   position: absolute;
@@ -886,6 +903,12 @@ body {
   background-color: #fff;
   top: 33px;
   left: 25px;
+}
+@media screen and (max-width: 420px) {
+  .screenshots__previous-button:after {
+    top: 24px;
+    left: 15px;
+  }
 }
 .screenshots__next-button {
   box-shadow: 0 5px 8px 0 rgba(58, 58, 58, 0.3);
@@ -896,6 +919,12 @@ body {
   position: relative;
   transform: rotate(180deg);
   margin: 0 20px;
+}
+@media screen and (max-width: 420px) {
+  .screenshots__next-button {
+    width: 50px;
+    height: 50px;
+  }
 }
 .screenshots__next-button:before {
   content: "";
@@ -908,6 +937,12 @@ body {
   top: 25px;
   left: 15px;
 }
+@media screen and (max-width: 420px) {
+  .screenshots__next-button:before {
+    top: 17px;
+    left: 10px;
+  }
+}
 .screenshots__next-button:after {
   content: "";
   position: absolute;
@@ -916,6 +951,12 @@ body {
   background-color: #fff;
   top: 31px;
   left: 25px;
+}
+@media screen and (max-width: 420px) {
+  .screenshots__next-button:after {
+    top: 24px;
+    left: 15px;
+  }
 }
 
 .feedback {
