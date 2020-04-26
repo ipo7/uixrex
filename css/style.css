@@ -83,6 +83,82 @@ body {
   text-align: center;
 }
 
+.formLogin {
+  width: 330px;
+  height: 450px;
+  border-radius: 10px;
+  border: 1px solid #000;
+  background-color: #fff;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  position: fixed;
+  top: 20%;
+  margin: auto;
+  left: 0;
+  right: 0;
+  z-index: 8;
+}
+.formLogin__exit {
+  width: 10px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 0 2px 2px;
+  position: relative;
+  transform: rotate(-45deg);
+  cursor: pointer;
+  top: 3%;
+  left: 40%;
+}
+.formLogin__exit:hover, .formLogin__exit:hover:before {
+  border-color: red;
+}
+.formLogin__exit:before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border: solid #000;
+  border-width: 0 0 2px 2px;
+  transform: rotate(180deg);
+  top: 8px;
+  right: 8px;
+}
+.formLogin__title {
+  font-size: 35px;
+  font-weight: 500;
+  line-height: 45px;
+  letter-spacing: 1px;
+  padding: 20% 0 15%;
+  color: #000000;
+}
+.formLogin__input {
+  width: 70%;
+  height: 35px;
+  margin: 2% 0;
+  border-radius: 10px;
+  padding-left: 10px;
+  border: 1px solid #808080;
+}
+.formLogin__footer {
+  color: #000;
+  font-size: 14px;
+}
+.formLogin__button {
+  margin: 15% 0 10%;
+  width: 70%;
+  height: 35px;
+  background-color: #00008B;
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: 10px;
+}
+.formLogin__button:hover {
+  background-color: #0000CD;
+}
+
 .container {
   max-width: 1200px;
   margin: 0 auto;

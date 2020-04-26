@@ -5,8 +5,23 @@ $(function() {
     e.preventDefault();
 
     $('.header__menu').toggleClass('header__menu_disable');
-  
+
   });
+
+  $('.header__button').on('touchstart click', function(e) {
+      e.stopPropagation();
+      $('.formLogin').css('display', 'flex')
+      //  e.preventDefault();
+      //$('.sign-up').animate({transform: 'scale(0.7)'});
+    });
+
+    $('.formLogin__exit').on('touchstart click', function(e) {
+      e.stopPropagation();
+      $('.formLogin').css('display', 'none')
+      //  e.preventDefault();
+      //$('.sign-up').animate({transform: 'scale(0.7)'});
+    });
+
 
   // $('.price-item').on('mouseenter touchend', function(e) {
   //
