@@ -8,9 +8,9 @@ $(function() {
 
   });
 
-  $('.button').on('touchstart click', function(e) {
+  $('.button, .message__form-button').on('touchstart click', function(e) {
       e.stopPropagation();
-      
+
     });
 
   $('.header__button').on('touchstart click', function(e) {

@@ -1287,6 +1287,11 @@ body {
   letter-spacing: 0.025em;
   padding-top: 20px;
 }
+@media screen and (max-width: 420px) {
+  .footer__text {
+    font-size: 13px;
+  }
+}
 .footer__navi {
   display: flex;
   width: 300px;
