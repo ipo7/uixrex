@@ -8,6 +8,11 @@ $(function() {
 
   });
 
+  $('.button').on('touchstart click', function(e) {
+      e.stopPropagation();
+      
+    });
+
   $('.header__button').on('touchstart click', function(e) {
       e.stopPropagation();
       $('.formLogin').css('display', 'flex')
