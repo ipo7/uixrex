@@ -515,11 +515,21 @@ body {
   padding-left: 20px;
   padding-bottom: 7px;
 }
+@media screen and (max-width: 420px) {
+  .main-block__buttons .button__title {
+    line-height: 25px;
+  }
+}
 .main-block__buttons .button__subtitle {
   font-family: Montserrat;
   font-size: 19.1px;
   line-height: 18px;
   font-weight: 600;
+}
+@media screen and (max-width: 420px) {
+  .main-block__buttons .button__subtitle {
+    line-height: 20px;
+  }
 }
 
 .description {
@@ -1112,13 +1122,13 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 60px 10px 60px;
+  padding: 60px 10px;
   flex-wrap: wrap;
 }
 @media screen and (max-width: 420px) {
   .footer__container {
     justify-content: center;
-    padding: 30px 10px 30px;
+    padding: 30px 10px;
   }
 }
 .footer__text {
