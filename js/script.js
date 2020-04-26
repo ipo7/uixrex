@@ -3,7 +3,9 @@ $(function() {
   $('.burger').on('click touchend', function(e) {
     e.stopPropagation();
     e.preventDefault();
-    $('.header__menu').slideToggle(300);
+
+    $('.header__menu').toggleClass('header__menu_disable');
+  
   });
 
   // $('.price-item').on('mouseenter touchend', function(e) {
@@ -19,7 +21,7 @@ $(function() {
     //adaptiveHeight: true,
     slidesToShow: 3,
     slidesToScroll: 1,
-    //centerMode: true,
+
     focusOnSelect: true,
 
     speed: 800,
