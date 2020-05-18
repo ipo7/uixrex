@@ -13,7 +13,7 @@ let path = {
   src: {
     html: [source + "/*.html", "!" + source + "/_*.html"],
     css: source + "/scss/*.scss",
-    js: source + "/js/script.js",
+    js: source + "/js/*.js",
     img: source + "/img/**/*.{jpg,png,svg,gif,ico,webp}",
     fonts: source + "/fonts"
   },
@@ -98,14 +98,14 @@ function css() {
 
 function js() {
   return src(path.src.js)
-    .pipe(fileinclude())
+    // .pipe(fileinclude())
     .pipe(dest(path.build.js))
-    .pipe(uglify())
-    .pipe(
-      rename({
-        extname: '.min.js'
-      })
-    )
+    // .pipe(uglify())
+    // .pipe(
+    //   rename({
+    //     extname: '.min.js'
+    //   })
+    // )
     .pipe(dest(path.build.js))
     .pipe(browsersync.stream())
 }
